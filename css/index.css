@@ -1,0 +1,276 @@
+.section1 { background: url(../img/bg-0.jpg) 50%;}
+.section2 { background: url(../img/bg-1.jpg) 50%;}
+.section3 { background: url(../img/bg-2.jpg) 50%;}
+.section4 { background: url(../img/bg-3.jpg) 50%;}
+.section{
+	position:relative;
+}
+.top{
+	width:100%;
+	height:60px;
+	background:#168BD8;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.section1 .cloud1{
+	width:100%;
+	height:100%;
+	background:url(../img/cloud_1.png);
+	position:absolute;
+	top:0px;
+	left:0;
+	animation:yun 20s linear infinite;
+}
+.section1 .cloud2{
+	width:100%;
+	height:100%;
+	background:url(../img/cloud_2.png);
+	position:absolute;
+	top:150px;
+	left:0;
+	animation:yun 30s linear infinite;
+}
+.section1 .cloud3{
+	width:100%;
+	height:100%;
+	background:url(../img/cloud_3.png);
+	position:absolute;
+	top:267px;
+	left:0;
+	animation:yun 35s linear infinite;
+}
+@keyframes yun{
+	from{
+		background-position:0 0;
+	}
+	to{
+		background-position:-1366px 0;
+	}
+}
+.section1 .plane{
+	position:absolute;
+	top:135px;
+	left:550px;
+	animation:fly 2s linear infinite alternate;
+}
+@keyframes fly{
+	from{
+		transform:translateY(0);
+	}
+	to{
+		transform:translateY(-20px);
+	}
+}
+.section1 .lauch{
+	position:absolute;
+	top:146px;
+	left:233px;
+}
+.section1 .hill1{
+	position:absolute;
+	top:492px;
+	left:69px;
+	z-index:1;
+}
+.section1 .hill2{
+	position:absolute;
+	top:529px;
+	left:817px;
+	z-index:1;
+}
+.section1 .hill3{
+	position:absolute;
+	top:494px;
+	left:1015px;
+	z-index:1;
+}
+.section1 .ship{
+	position:absolute;
+	top:350px;
+	left:387px;
+	z-index:1;
+}
+.arrow{
+	display:block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	bottom:50px;
+	left:677px;
+	z-index:100;
+	animation:fly 1s linear 0.5s infinite alternate;
+}
+.section1 .bottom{
+	width:100%;
+	height:125px;
+	background:#0A66BD;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.section2 .lingxian,.section3 .quanmian,.section4 .zhuanye{
+	position:absolute;
+	top:243px;
+	left:250px;
+	left:200px;
+	animation:rotate 2s linear 0s infinite alternate;
+	z-index:3;
+	opacity:0;
+}
+@keyframes rotate{
+	from{
+		transform:rotateY(0deg);
+	}
+	40%{
+		transform:rotateY(0deg);
+	}
+	to{
+		transform:rotateY(-360deg);
+	}
+}
+.section2 h1,.section3 h1,.section4 h1{
+	font-size:30px;
+	font-weight:normal;
+	margin:0;
+	font-family:"microsoft yahei";
+	color:#fff;
+	position:absolute;
+	left:290px;
+	top:250px;
+	z-index:3;
+	opacity:0;
+}
+.section2 h2,.section3 h2,.section4 h2{
+	width:310px;
+	font-size:18px;
+	line-height:32px;
+	font-weight:normal;
+	margin:0;
+	font-family:"microsoft yahei";
+	color:#CEE0F5;
+	position:absolute;
+	left:290px;
+	top:300px;
+	z-index:3;
+	opacity:0;
+}
+.section2 .brain,.section3 .allside{
+	position:absolute;
+	left:711px;
+	top:153px;
+	opacity:0;
+	left:65%;
+}
+.section2 ul,li{
+	margin:0;
+	list-style:none;
+}
+.section2 ul li:nth-child(1){
+	width:40px;
+	height:40px;
+	background:#35B568;
+	position:absolute;
+	bottom:0;
+	left:296px;
+}
+.section2 ul li:nth-child(2){
+	width:79px;
+	height:79px;
+	background:#4AC179;
+	position:absolute;
+	bottom:0;
+	left:375px;
+}
+.section2 ul li:nth-child(3){
+	width:40px;
+	height:40px;
+	background:#8AE75A;
+	position:absolute;
+	bottom:0;
+	left:454px;
+}
+.section2 ul li:nth-child(4){
+	width:40px;
+	height:40px;
+	background:#8AE75A;
+	position:absolute;
+	bottom:0;
+	left:798px;
+}
+.section2 ul li:nth-child(5){
+	width:40px;
+	height:40px;
+	background:#4AC179;
+	position:absolute;
+	bottom:0;
+	left:877px;
+}
+.section3 .square{
+	width:158px;
+	position:absolute;
+	left:270px;
+	top:212px;
+}
+.section3 .bg-3-head{
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+.section3 ul li{
+	position:absolute;
+	width:79px;
+	height:79px;
+}
+.section3 ul li:nth-child(1){
+	background:#29A2B8;
+	left:191px;
+	top:133px;
+}
+.section3 ul li:nth-child(2){
+	background:#33BB9A;
+	left:270px;
+	top:54px;
+}
+.section3 ul li:nth-child(3){
+	background:#60CF6E;
+	left:349px;
+	top:133px;
+}
+.section3 ul li:nth-child(4){
+	background:#33BB9A;
+	left:428px;
+	top:212px;
+}
+
+.section4 .stat{
+	position:absolute;
+	top:189px;
+	left:518px;
+	left:568px;
+	opacity:0;
+}
+.section4 .bubble{
+	position:absolute;
+	left:277px;
+	top:166px;
+}
+.section4 span{
+	font-size:10px;
+	color:#fff;
+	font-family:"microsoft yahei";
+	position:absolute;
+	bottom:30px;
+	left:600px;
+}
+.section4 span a{
+	font-size:12px;
+	color:#fff;
+	text-decoration:none;
+}
+
+
+
+
+
+
